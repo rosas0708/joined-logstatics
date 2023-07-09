@@ -511,7 +511,7 @@ li > a:only-child:after { content: ''; }
 
 /*-- Why choose us --*/
 .choose {
-    bottom: -15%;
+    bottom: -31%;
     width: 75%;
     left: 0;
     margin: 0 auto;
