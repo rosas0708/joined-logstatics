@@ -1,0 +1,523 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<title data-i18n="title_home">Home</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+	
+	<!-- css files -->
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' /><!-- bootstrap css -->
+    <link href="css/style.css" rel='stylesheet' type='text/css' /><!-- custom css -->
+    <link href="css/font-awesome.min.css" rel="stylesheet"><!-- fontawesome css -->
+	<!-- //css files -->
+	
+	<!-- google fonts -->
+	<link href="http://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=devanagari,latin-ext" rel="stylesheet">
+
+	<!-- //google fonts -->
+	
+</head>
+<body>
+<!-- //header -->
+<header class="custom-header">
+	<!-- Top Bar -->
+	<div class="top-bar">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-md-8 col-sm-12 top-info text-md-left text-center">
+					<span class="fa fa-envelope-open-o mr-2"></span>
+					<a href="mailto:info@joinedlink.com" class="contact-link mr-4">info@joinedlink.com</a>
+					<span class="fa fa-phone mr-2"></span>
+					<span class="contact-text mr-2">+86-17802096929</span>
+					<span class="support-text" data-i18n="top_helpline">(24/7 Helpline)</span>
+				</div>
+				<div class="col-md-4 col-sm-12 text-md-right text-center lang-switcher-container">
+					<div class="lang-switcher">
+						<span class="fa fa-globe mr-1"></span>
+						<a href="?lang=zh" data-lang="zh" data-i18n="lang_zh" class="lang-link">CH</a>
+						<span class="lang-sep mx-1">/</span>
+						<a href="?lang=en" data-lang="en" data-i18n="lang_en" class="lang-link">EN</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Main Nav -->
+	<div class="main-nav shadow-sm">
+		<div class="container">
+			<nav class="navbar-custom">
+				<div id="logo">
+					<h1>
+						<a href="index.html" class="logo-link">
+							<span data-i18n="header_title" class="sr-only">Joined Link Logistics Co., Ltd.</span>
+						</a>
+					</h1>
+				</div>
+				<label for="drop" class="toggle" data-i18n="nav_menu">
+                    <span class="fa fa-bars"></span> Menu
+                </label>
+				<input type="checkbox" id="drop" />
+				<ul class="menu mt-md-2 ml-auto mb-0 align-items-center">
+					<li class="mr-lg-4 mr-2 active"><a href="index.html" data-i18n="nav_home">Home</a></li>
+					<li class="mr-lg-4 mr-2 "><a href="about.html" data-i18n="nav_about">About Us</a></li>
+					<li class="mr-lg-4 mr-2 "><a href="services.html" data-i18n="nav_services">Services</a></li>
+					<li class="mr-lg-4 mr-2 "><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+					<li class="quote-btn"><a href="#subscribe" data-i18n="nav_subscribe" class="btn btn-primary btn-custom shadow-sm">Subscribe</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</header>
+<!-- //header -->
+		
+<!-- banner -->
+<section class="banner position-relative" id="home">
+	<div class="container">
+		<div class="banner-text">
+			<div class="slider-info">
+				<div class="agileinfo-logo mt-lg-5">
+					<h2 data-i18n="banner_heading">Shipping From China <br> To All Over The World</h2>
+					<a href="contact.html" data-i18n="banner_cta">Contact Us</a>
+				</div>
+			</div>
+		</div>
+		<div class="choose text-center position-absolute d-lg-flex">
+			<div class="choose-icon">
+				<span class="fa fa-ship" aria-hidden="true"></span>
+				<div class=" choose-grid">
+					<h3 class="mt-4" data-i18n="service_sea_title">Ocean Freight</h3>
+					<p class="" data-i18n="service_sea_desc">Ocean Freight Forwarding of LCL, FCL, RO/RO, Break Bulk vessel (door to door).</p>
+				</div>
+			</div>
+			<div class="choose-icon">
+				<span class="fa fa-truck" aria-hidden="true"></span>
+				<div class="choose-grid">
+					<h3 class="mt-4" data-i18n="service_truck_title">Land Freight</h3>
+					<p class="" data-i18n="service_truck_desc">Inland Transportation via truck.</p>
+				</div>
+			</div>
+			<!-- <div class="choose-icon">
+				<span class="fa fa-ship" aria-hidden="true"></span>
+				<div class="choose-grid">
+					<h3 class="mt-4">Ocean Freight</h3>
+					<p class="">Shipping via Ocean.</p>
+				</div>
+			</div> -->
+			<div class="choose-icon">
+				<span class="fa fa-plane" aria-hidden="true"></span>
+				<div class="choose-grid">
+					<h3 class="mt-4" data-i18n="service_air_title">Air Freight</h3>
+					<p class="" data-i18n="service_air_desc">Air Freight Forwarding (door to door).</p>
+				</div>
+			</div>
+			<div class="choose-icon mr-0">
+				<span class="fa fa-train" aria-hidden="true"></span>
+				<div class="choose-grid">
+					<h3 class="mt-4" data-i18n="service_rail_title">Rail Freight</h3>
+					<p class="" data-i18n="service_rail_desc">Rail Freight services.</p>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</section>
+<div class="clearfix"></div>
+<!-- //banner -->
+
+<!-- carousel -->
+<section class="carousel-section py-5">
+	<div class="container">
+		<div class="carousel" data-carousel>
+			<div class="carousel-slide active" data-carousel-slide>
+				<img data-i18n-src="carousel_img_1" src="images/images_lib/home/C.png" alt="" class="img-fluid" />
+				<div class="carousel-caption">
+					<h3 data-i18n="carousel_title_1">Reliable Logistics</h3>
+					<p data-i18n="carousel_desc_1">We deliver your cargo safely and on time.</p>
+				</div>
+			</div>
+			<div class="carousel-slide" data-carousel-slide>
+				<img data-i18n-src="carousel_img_2" src="images/images_lib/home/C.png" alt="" class="img-fluid" />
+				<div class="carousel-caption">
+					<h3 data-i18n="carousel_title_2">Global Coverage</h3>
+					<p data-i18n="carousel_desc_2">From China to the world, we connect your shipment everywhere.</p>
+				</div>
+			</div>
+			<div class="carousel-controls">
+				<button type="button" class="carousel-prev" data-carousel-prev>&lt;</button>
+				<button type="button" class="carousel-next" data-carousel-next>&gt;</button>
+			</div>
+		</div>
+	</div>
+</section>
+
+<div class="tlinks" data-i18n="collect_from">Collect from <a href="http://www.cssmoban.com/"  title="缃戠珯妯℃澘">缃戠珯妯℃澘</a></div>
+<!-- about -->
+<section class="about py-5" id="how">
+	<div class="container py-lg-5">
+		<div class="row about-grids">
+			<div class="col-lg-6 about-left">
+				<img src="images/images_lib/home/C.png" alt="" class="img-fluid"/>
+			</div>
+			<div class="col-lg-6 grid1 mt-lg-0 mt-4 pl-lg-5">
+				<h3 class="my-lg-4 mb-2" data-i18n="section_about_title">THE 5TH CARGO FREIGHT FAIR IN GUANGZHOU</h3>
+				<p class="" data-i18n="section_about_body">The 5th cargo freight fair was hold on May 20th to 21st in Guangzhou,China.
+					Joned Link Logistics have built good relationship with many logistics company who attended the fair. For covid-19,many companies are not able to come,but we had use online fair show to communicate with them. We are ready to build long-term business relationship with more and more partners.
+					</p>
+				<!-- <p class="mt-3">Integer pulvinar leo id viverra feugiat. Pellentesque libero justo, semper at tempus vel, ultrices in ligula. Integer pulvinar leo id viverra feugiat. Pellentesque libero justo, semper at tempus vel, ultrices in ligula. Nulla
+					sollicit.</p> -->
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //about -->
+
+<!-- services -->
+<section class="services py-5 bg-clr" id="services">
+	<div class="container py-lg-5">
+		<div class="row mt-lg-5">
+			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-md-0 mb-4">
+					<h4 class="heading mt-3 ml-3" data-i18n="services_heading">We Provide Safe & High-efficiency Shipping Services around the world</h4>
+			</div>
+			<!-- <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+				<div class="our-services-wrapper mb-60">
+					<div class="services-inner">
+						<div class="our-services-icon">
+							<span class="fa fa-ship" aria-hidden="true"></span>
+						</div>
+						<div class="our-services-text">
+							<h4>Sea freight</h4>
+							<p> Ocean Freight Forwarding of LCL, FCL, RO/RO, BULK vessel (door to door).</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+				<div class="our-services-wrapper mb-60">
+					<div class="services-inner">
+						<div class="our-services-icon">
+							<span class="fa fa-truck" aria-hidden="true"></span>
+						</div>
+						<div class="our-services-text">
+							<h4>Truck Transport</h4>
+							<p>Proin varius pellentesque nunc ut ipsum tincidunt ante. Init id lacus sed semper at tempus vel.</p>
+						</div>
+					</div>
+				</div>
+			</div> -->
+			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+				<div class="our-services-wrapper mb-md-0 mb-60">
+					<div class="services-inner">
+						<div class="our-services-icon">
+							<span class="fa fa-ship" aria-hidden="true"></span>
+						</div>
+						<div class="our-services-text">
+							<h4 data-i18n="service_sea_title">Ocean Freight</h4>
+							<p data-i18n="service_sea_desc">Ocean Freight Forwarding of LCL, FCL, RO/RO, Break Bulk vessel (door to door).</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+				<div class="our-services-wrapper">
+					<div class="services-inner">
+						<div class="our-services-icon">
+							<span class="fa fa-truck" aria-hidden="true"></span>
+						</div>
+						<div class="our-services-text">
+							<h4 data-i18n="service_truck_title">Land Freight</h4>
+							<p data-i18n="service_truck_desc">Inland Transportation via truck.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+				<div class="our-services-wrapper mb-md-0 mb-60">
+					<div class="services-inner">
+						<div class="our-services-icon">
+							<span class="fa fa-plane" aria-hidden="true"></span>
+						</div>
+						<div class="our-services-text">
+							<h4 data-i18n="service_air_title">Air Freight</h4>
+							<p data-i18n="service_air_desc">Air Freight Forwarding (door to door).</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+				<div class="our-services-wrapper mb-md-0 mb-60">
+					<div class="services-inner">
+						<div class="our-services-icon">
+							<span class="fa fa-book" aria-hidden="true"></span>
+						</div>
+						<div class="our-services-text">
+						<h4 data-i18n="service_consolidation_title">Consolidation</h4>
+						<p data-i18n="service_consolidation_desc">Consolidation of air and sea shipment.</p>
+							<!-- <p>Inspection and Cargo Insurance.</p> -->
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+				<div class="our-services-wrapper mb-md-0 mb-60">
+					<div class="services-inner">
+						<div class="our-services-icon">
+							<span class="fa fa-book" aria-hidden="true"></span>
+						</div>
+						<div class="our-services-text">
+<h4 data-i18n="service_customs_title">Customs clearance</h4>
+						<p data-i18n="service_customs_desc">Customs clearance for export and import.</p>
+			
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+				<div class="our-services-wrapper mb-md-0 mb-60">
+					<div class="services-inner">
+						<div class="our-services-icon">
+							<span class="fa fa-book" aria-hidden="true"></span>
+						</div>
+						<div class="our-services-text">
+<h4 data-i18n="service_warehousing_title">Warehousing and storage</h4>
+						<p data-i18n="service_warehousing_desc">We can collect the goods in our warehouse and do consolidation.
+								
+							
+			
+						</div>
+					</div>
+				</div>
+			</div>
+	
+			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+				<div class="our-services-wrapper mb-md-0 mb-60">
+					<div class="services-inner">
+						<div class="our-services-icon">
+							<span class="fa fa-book" aria-hidden="true"></span>
+						</div>
+						<div class="our-services-text">
+<h4 data-i18n="service_insurance_title">Insurance</h4>
+						<p data-i18n="service_insurance_desc">We can help to buy insurance for all the shipments.</p>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	
+	</div>
+	</div>
+</section>
+<!-- //services -->
+
+<!-- stats -->
+<!-- <section class="stats py-5">
+	<div class="container py-lg-5 py-md-3">
+		<div class="row stat-grids">
+			<div class="col-lg-5">
+				<h4 class="heading mb-3">Logistics Statistical growth</h4>
+				<p class="">Integer pulvinar leo id viverrra feugiat. Pellentesque libero ut justo, semper at tempus vel, ultrices ipsum ligula. Nulla
+					sollicit udin velit. semper at tempus vel, ultrices in ligula leo sed viverra feugiat Nulla.</p>
+			</div>
+			<div class="col-lg-6 offset-lg-1 stats-right">
+				<div class="row stats-inner-grid">
+					<div class="col-sm-6 col-6">
+						<h4>950</h4>
+						<p>Satisfied <br>Clients</p>
+					</div>
+					<div class="col-sm-6 col-6">
+						<h4>250+</h4>
+						<p>Branches <br>Worldwide</p>
+					</div>
+				</div>
+				<div class="row stats-inner-grid mt-5">
+					<div class="col-sm-6 col-6">
+						<h4>350</h4>
+						<p>Shipments <br>Completed</p>
+					</div>
+					<div class="col-sm-6 col-6">
+						<h4>100%</h4>
+						<p>Safe <br>Shipping</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section> -->
+<!-- //stats -->
+
+<!-- shipping -->
+<section class="shipping py-5">
+	<div class="container py-lg-5 py-md-3">
+		<div class="row">
+			<div class="col-lg-5 p-md-0">
+				<img src="images/images_lib/home/D.png" alt="" class="img-fluid"/>
+			</div>
+			<div class="col-lg-7 p-0 mt-lg-0 mt-4">
+				<div class="shipping-right">
+						<h4 class="heading" data-i18n="shipping_heading"> WE ARE READY TO ASSIST YOU FOR ALL KINDS OF SHIPMENT</h4>
+							<p class="mt-3" data-i18n="shipping_body"> Joined Link Logistics is a young and dynamic logistics company in China,but our team are all with experience 
+							of several years in logistics area.Our business philosophy is: pattern internationalization, service efficiency, and cost refinement. We  have established long-term cooperation and win-win strategic partnerships with many partners from all over the world. They have deep and extensive industry contacts and channel systems at home and abroad. They provide DDUs, DDUs, etc. in Hong Kong, Guangzhou, Shenzhen, and exports to  Africa ,Middle East, South East Asia, European and USA.
+							</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //shipping -->
+
+<!--/Blog-Posts-->
+<section class="banner-bottom-w3layouts py-5" id="blog">
+	<div class="container">
+		<div class="inner-sec-w3ls py-lg-5 py-md-3">
+			<!--/services-grids-->
+			<div class="row blog-sec">
+				<div class="col-lg-4 manager-img mb-lg-0 mb-4">
+					<!-- <h4 class="heading"> WE CARRY锛學E CARE.</h4> -->
+						<p class="mt-4 text-indent" data-i18n="blog_quote">"Our goal is to continue to build an organization that challenges traditional supply chain methodology. Through the use of state of the art technology and a team of client advocates, we are dedicated to putting our clients first, creating innovative global transportation and logistics services that are efficiently and cost-effectively addressing our client鈥檚 challenges.Our vision is to become the leader in providing our customers the best logistics services."</p>
+						<p class="mt-4" data-i18n="blog_author">
+						----------Denny Liu(Manager Director)
+					</p>
+					<!-- <p class="mt-4">Our mission: <br>
+						To give a personal services and the services of a full relationship in all sectors of the economy, and we are using information technology and modern management methods to the maximum extent possible.
+					</p>
+					<p class="mt-4">
+						Starters:  <br>
+						<p>1. transparency, credibility and honesty in dealings.</p>
+						<p>2. planning and good governance in the management of our activities.</p>
+						<p>3. allocation of our services in accordance with the requirements of customers.</p>
+						<p>4. upgrading our services to meet the aspirations and expectations of our customers.let us work tagether锛宻trive together,develop together.</p>
+					</p> -->
+<!-- 
+					<img src="images/manager.jpg" alt="" class="img-fluid rounded-circle mt-3">
+					<img src="images/signature.jpg" alt="" class="img-fluid img1"> -->
+				</div>
+				<div class="col-lg-4 col-md-6 about-in blog-grid-info text-left">
+					<div class="card img">
+						<div class="card-body img">
+							<img src="images/images_lib/home/A.jpg" alt="" class="img-fluid">
+							<div class="blog-des mt-3">
+							<h5 class="card-title mt-4" data-i18n="blog_card1_title">Air Shipping Cargo Transport</h5>
+							<p class="card-text" data-i18n="blog_card1_text">We can ship the cargo from all the ports in China by air.For some special cargo with batteries or with liquid,powder,we can ship it from Hongkong airport.
+								</p>
+								<a href="#" data-i18n="blog_card_more">Click More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 about-in blog-grid-info text-left mt-md-0 mt-5">
+					<div class="card img">
+						<div class="card-body img">
+							<img src="images/images_lib/home/B_1.jpg" alt="" class="img-fluid">
+							<div class="blog-des mt-3">
+							<h5 class="card-title mt-4" data-i18n="blog_card2_title">Sea Shipping Cargo Transport</h5>
+							<p class="card-text" data-i18n="blog_card2_text">Our sea shipping services are including FCL,LCL. If you have several suppliers,we can collect your goods together and ship to your side with one shipment.
+								</p>
+								<a href="#" data-i18n="blog_card_more">Click More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--//Blog-Posts-->
+
+<!-- footer-top -->
+<section class="footer-top py-5">
+	<div class="container">
+		<div class="row footer-top-grid">
+			<div class="col-sm-6">
+				<h3 data-i18n="footer_top_title">Contact Us</h3>
+				<p data-i18n="footer_top_body">Call us, we are 24/7 Helpline</p>
+			</div>
+			<div class="col-sm-6 text-sm-right mt-sm-0 mt-3">
+				<h3><span class="fa fa-phone" aria-hidden="true"></span> +86-17802096929</h3>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //footer-top -->
+
+<!--footer -->
+<div class="footer footer_w3layouts_section_1its py-5" id="subscribe">
+	<div class="container pt-sm-4">
+		<div class="row footer-grid">
+			<div class="col-md-5 footer-grid_section_1its_w3">
+				<div class="footer-title">
+						<h3 data-i18n="footer_who_we_are">Who we are</h3>
+					</div>
+					<div class="footer-text">
+						<p data-i18n="footer_who_we_are_body">Joined Link Logistics Co., Ltd. is a leading logistics company located in Shenzhen, China. We ship goods from China to worldwide destinations by air and sea. We have an experienced and powerful team to support you.</p>
+					<ul class="social_section_1info">
+						<li><a href="#" class="w3_facebook"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#" class="w3_twitter"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#" class="w3_instagram"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="#" class="w3_google"><i class="fa fa-google-plus"></i></a></li>
+					</ul>
+			</div>
+			</div>
+			<div class="col-md-3 col-sm-5 footer-grid_section_1its_w3 mt-md-0 mt-4">
+				<div class="footer-title">
+					<h3 data-i18n="footer_useful_links">Useful Links</h3>
+				</div>
+				<ul class="links">
+					<li><a href="about.html" data-i18n="footer_who_we_are">About Our Company</a></li>
+					<li><a href="services.html" data-i18n="nav_services">Logistics Services</a></li>
+					<li><a href="#" data-i18n="footer_terms">Terms & Conditions</a></li>
+					<li><a href="#" data-i18n="footer_privacy">Privacy Policy</a></li>
+				</ul>
+			</div>
+			<div class="col-md-4 col-sm-7 footer-grid_section_1its_w3 mt-md-0 mt-4">
+				<div class="footer-title">
+					<h3 data-i18n="footer_subscribe">Subscribe</h3>
+				</div>
+				<div class="footer-text">
+					<p data-i18n="footer_subscribe_body">By subscribing to our mailing list you will get latest news and updates from us.</p>
+					<form action="#" method="post">
+						<input type="email" name="Email" placeholder="Enter your email..." data-i18n-placeholder="footer_subscribe_placeholder" required="">
+						<button class="btn1"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+						<div class="clearfix"> </div>
+					</form>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<!-- move top -->
+		<div class="move-to-top text-center">
+			<a href="#home" class="move-top"><span class="fa fa-angle-double-up" aria-hidden="true"></span></a>
+		</div>
+		<!-- //move top -->
+		<div class="copyright">
+			<p data-i18n="footer_copyright">Copyright &copy; 2019.Company name All rights reserved by Joined Link Logistics Co., Ltd. 娣卞湷甯傚槈棰嗙墿娴佹湁闄愬叕鍙?/p>
+		</div>
+	</div>
+</div>
+<!-- //footer -->
+
+	<script src="js/i18n.js"></script>
+</body>
+</html>
+
+
+
+
+
+

@@ -1,11 +1,12 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Error Page</title>
+<title data-i18n="title_error">Page Not Found | Joinedlink Logistics</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="" />
+<meta name="description" content="The page you are looking for cannot be found. Return to Joinedlink Logistics for China freight forwarding and global logistics services." />
+<meta name="robots" content="noindex, follow" />
 
     <script>
         addEventListener("load", function () {
@@ -35,42 +36,73 @@
 	<div class="container">
 		<!-- top header -->
 		<div class="row top_header pt-3">
-			<div class="col-lg-3 offset-lg-7 col-md-5 offset-md-3 col-sm-6 col-7 offset-sm-2 top-grid">
+			<!-- <div class="col-lg-2 col-md-3 col-sm-4 col-5 lang-col">
+				<div class="lang-switcher">
+	<div class="lang-toggle">
+		<span class="lang-icon fa fa-globe"></span>
+		<a href="?lang=zh" class="lang-link" data-lang="zh" data-i18n="lang_zh">CH</a>
+		<span class="lang-sep">/</span>
+		<a href="?lang=en" class="lang-link" data-lang="en" data-i18n="lang_en">EN</a>
+	</div>
+</div>
+			</div> -->
+			<div class="col-lg-6 col-md-5 col-sm-5 col-4 top-grid">
 				<span class="fa ml-3 fa-envelope-open-o"></span>
-				<p class=""> <a href="mailto:info@example.com">info@example.com</a> <span class="block">Contact Support</span> </p>
+				<p class=""> <a href="mailto:info@joinedlink.com">info@joinedlink.com</a> <span class="block" data-i18n="top_contact_support">Contact Support</span> </p>
 			</div>
-			<div class="col-lg-2 col-md-4 col-sm-4 col-5 top-grid pl-0">
+			<div class="col-lg-4 col-md-4 col-sm-3 col-3 top-grid pl-0">
 				<span class="fa ml-3 fa-phone"></span>
-				<p class=""> +11 2345 6789 <span class="block">24/7 Helpline</span> </p>
+				<p class=""> +86-17802096929 <span class="block" data-i18n="top_helpline">24/7 Helpline</span> </p>
+			</div>
+			<div class="col-lg-2 col-md-3 col-sm-4 col-5 lang-col">
+				<div class="lang-switcher">
+	<div class="lang-toggle">
+		<span class="lang-icon fa fa-globe"></span>
+		<a href="?lang=zh" class="lang-link" data-lang="zh" data-i18n="lang_zh">CH</a>
+		<span class="lang-sep">/</span>
+		<a href="?lang=en" class="lang-link" data-lang="en" data-i18n="lang_en">EN</a>
+	</div>
+</div>
 			</div>
 		</div>
 		<!-- top header -->
 		<!-- nav -->
 		<nav class="pt-2">
 			<div id="logo">
-				<h1> <a href="index.html"><span class="fa fa-ship"></span> Logistic</a></h1>
+				<h1> <a href="index.html" data-i18n="header_title">Joined Link Logistics Co., Ltd.</a></h1>
 			</div>
-			<label for="drop" class="toggle">Menu</label>
+			<label for="drop" class="toggle" data-i18n="nav_menu">Menu</label>
 			<input type="checkbox" id="drop" />
 			<ul class="menu mt-md-2 ml-auto">
-				<li class="mr-lg-4 mr-2"><a href="index.html">Home</a></li>
-				<li class="mr-lg-4 mr-2"><a href="about.html">About Us</a></li>
-				<li class="mr-lg-4 mr-2"><a href="services.html">Services</a></li>
-				<li class="mr-lg-3 mr-2 p-0 active">
-					<!-- First Tier Drop Down -->
-					<label for="drop-2" class="toggle">Dropdown <span class="fa fa-angle-down" aria-hidden="true"></span> </label>
-					<a href="#">Dropdown <span class="fa fa-angle-down" aria-hidden="true"></span></a>
-					<input type="checkbox" id="drop-2"/>
-					<ul class="inner-dropdown">
-						<li><a href="gallery.html">Our Gallery</a></li>
-						<li><a href="error.html">404 Error Page</a></li>
-						<li><a href="#">Add Link</a></li>
+				<li class="mr-lg-4 mr-2"><a href="index.html" data-i18n="nav_home">Home</a></li>
+				<li class="mr-lg-4 mr-2 services-nav"><a href="service-detail.html?service=sea" data-i18n="nav_services">Services</a>
+					<ul class="service-submenu">
+						<li><a href="service-detail.html?service=sea" data-i18n="service_sea_title">Ocean Freight</a></li>
+						<li><a href="service-detail.html?service=air" data-i18n="service_air_title">Air Freight</a></li>
+						<li><a href="service-detail.html?service=rail" data-i18n="service_rail_title">Rail Freight</a></li>
+						<li><a href="service-detail.html?service=container" data-i18n="service_container_title">Container Services</a></li>
+						<li><a href="service-detail.html?service=drayage" data-i18n="service_drayage_title">Drayage & Trucking</a></li>
+						<li><a href="service-detail.html?service=customs" data-i18n="service_customs_title">Customs Clearance</a></li>
+						<li><a href="service-detail.html?service=warehousing" data-i18n="service_warehousing_title">Warehousing and Storage</a></li>
+						<li><a href="service-detail.html?service=special" data-i18n="service_special_title">Special Containers</a></li>
+						<li><a href="service-detail.html?service=dg" data-i18n="service_dg_title">Dangerous Goods</a></li>
+						<li><a href="service-detail.html?service=insurance" data-i18n="service_insurance_title">Insurance</a></li>
 					</ul>
 				</li>
-				<li class="mr-lg-4 mr-2"><a href="contact.html">Contact</a></li>
-				<li class=""><a href="#subscribe">Subscribe</a></li>
+				<li class="mr-lg-4 mr-2 about-nav">
+					<a href="about.html" data-i18n="nav_about">About Us</a>
+					<ul class="service-submenu">
+						<li><a href="about-detail.html?section=profile" data-i18n="about_nav_profile">Company Profile</a></li>
+						<li><a href="about-detail.html?section=philosophy" data-i18n="about_nav_philosophy">Service Philosophy</a></li>
+						<li><a href="about-detail.html?section=org" data-i18n="about_nav_org">Organization Structure</a></li>
+						<li><a href="about-detail.html?section=partners" data-i18n="about_nav_partners">Partners</a></li>
+					</ul>
+				</li>
+				<li class="mr-lg-4 mr-2"><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+				<li class=""><a href="#subscribe" data-i18n="nav_subscribe">Subscribe</a></li>
+				
 			</ul>
-		</nav>
+			</nav>
 		<!-- //nav -->
 	</div>
 </header>
@@ -87,10 +119,10 @@
 <!-- error page -->
 <section class="error-section py-5 text-center">
 	<div class="container py-md-3">
-		<h2 class="">404 <span>- Page Not Found</span></h2>
-		<p class=""><span class="fa fa-frown-o" aria-hidden="true"></span> Something Went Wrong</p>
-		<p class="">Oops! The page you are looking for cannot be found</p>
-		<a href="index.html">Back To Home</a>
+		<h2 class="" data-i18n="error_heading">404 <span>- Page Not Found</span></h2>
+		<p class=""><span class="fa fa-frown-o" aria-hidden="true"></span> <span data-i18n="error_subtitle">Something Went Wrong</span></p>
+		<p class="" data-i18n="error_message">Oops! The page you are looking for cannot be found</p>
+		<a href="index.html" data-i18n="error_back">Back To Home</a>
 	</div>	
 </section>
 <!-- error page -->
@@ -100,8 +132,8 @@
 	<div class="container">
 		<div class="row footer-top-grid">
 			<div class="col-sm-6">
-				<h3>Contact Us</h3>
-				<p>Call us, we are 24/7 Helpline</p>
+				<h3 data-i18n="footer_top_title">Contact Us</h3>
+				<p data-i18n="footer_top_body">Call us, we are 24/7 Helpline</p>
 			</div>
 			<div class="col-sm-6 text-sm-right mt-sm-0 mt-3">
 				<h3><span class="fa fa-phone" aria-hidden="true"></span> +11 2345 6789</h3>
@@ -117,37 +149,37 @@
 		<div class="row footer-grid">
 			<div class="col-md-5 footer-grid_section_1its_w3">
 				<div class="footer-title">
-					<h3>Who we are</h3>
+					<h3 data-i18n="footer_who_we_are">Who we are</h3>
 				</div>
 				<div class="footer-text">
-					<p>Curabitur non nulla sit amet nislinit tempus ipsum convallis quis ac lectus. lac inia eget consectetur sed, convallis at tellus.	Nulla porttitor accumsana tincidunt. Vestibulum ante ipsum primis tempus.</p>
+					<p data-i18n="footer_who_we_are_body">Curabitur non nulla sit amet nislinit tempus ipsum convallis quis ac lectus. lac inia eget consectetur sed, convallis at tellus.	Nulla porttitor accumsana tincidunt. Vestibulum ante ipsum primis tempus.</p>
 					<ul class="social_section_1info">
 						<li><a href="#" class="w3_facebook"><i class="fa fa-facebook"></i></a></li>
 						<li><a href="#" class="w3_twitter"><i class="fa fa-twitter"></i></a></li>
 						<li><a href="#" class="w3_instagram"><i class="fa fa-instagram"></i></a></li>
 						<li><a href="#" class="w3_google"><i class="fa fa-google-plus"></i></a></li>
 					</ul>
-				</div>
+			</div>
 			</div>
 			<div class="col-md-3 col-sm-5 footer-grid_section_1its_w3 mt-md-0 mt-4">
 				<div class="footer-title">
-					<h3>Useful Links</h3>
+					<h3 data-i18n="footer_useful_links">Useful Links</h3>
 				</div>
 				<ul class="links">
-					<li><a href="about.html">About Our Company</a></li>
-					<li><a href="services.html">Logistics Services</a></li>
-					<li><a href="#">Terms & Conditions</a></li>
-					<li><a href="#">Privicy Policy</a></li>
+				<li><a href="about.html" data-i18n="footer_who_we_are">About Our Company</a></li>
+				<li><a href="services.html" data-i18n="nav_services">Logistics Services</a></li>
+				<li><a href="#" data-i18n="footer_terms">Terms & Conditions</a></li>
+				<li><a href="#" data-i18n="footer_privacy">Privacy Policy</a></li>
 				</ul>
 			</div>
 			<div class="col-md-4 col-sm-7 footer-grid_section_1its_w3 mt-md-0 mt-4">
 				<div class="footer-title">
-					<h3>Subscribe</h3>
+					<h3 data-i18n="footer_subscribe">Subscribe</h3>
 				</div>
 				<div class="footer-text">
-					<p>By subscribing to our mailing list you will get latest news and updates from us.</p>
+					<p data-i18n="footer_subscribe_body">By subscribing to our mailing list you will get latest news and updates from us.</p>
 					<form action="#" method="post">
-						<input type="email" name="Email" placeholder="Enter your email..." required="">
+						<input type="email" name="Email" placeholder="Enter your email..." data-i18n-placeholder="footer_subscribe_placeholder" required="">
 						<button class="btn1"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
 						<div class="clearfix"> </div>
 					</form>
@@ -161,11 +193,16 @@
 		</div>
 		<!-- //move top -->
 		<div class="copyright">
-			<p>Copyright &copy; 2019.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
+			<p data-i18n="footer_copyright">Copyright &copy; 2019.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="妯℃澘涔嬪">妯℃澘涔嬪</a> - Collect from <a href="http://www.cssmoban.com/" title="缃戦〉妯℃澘" target="_blank">缃戦〉妯℃澘</a></p>
 		</div>
 	</div>
 </div>
 <!-- //footer -->
 
+	<script src="js/i18n.js"></script>
 </body>
 </html>
+
+
+
+
