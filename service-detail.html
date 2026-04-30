@@ -16,6 +16,29 @@
 <meta property="og:image" content="https://joinedlink.com/images/images_lib/home/C.png" />
 <meta name="twitter:card" content="summary_large_image" />
 <script>
+(function () {
+    var lang = "en";
+    try {
+        var params = new URLSearchParams(window.location.search);
+        var urlLang = params.get("lang");
+        if (urlLang === "zh" || urlLang === "en") {
+            lang = urlLang;
+        } else {
+            var saved = localStorage.getItem("siteLanguage");
+            if (saved === "zh" || saved === "en") {
+                lang = saved;
+            } else {
+                var navLang = navigator.language || navigator.userLanguage || "en";
+                lang = navLang.toLowerCase().indexOf("zh") === 0 ? "zh" : "en";
+            }
+        }
+    } catch (e) {
+    }
+    document.documentElement.lang = lang;
+    document.documentElement.classList.add("i18n-pending");
+})();
+</script>
+<script>
 addEventListener("load", function () {
     setTimeout(hideURLbar, 0);
 }, false);
@@ -27,6 +50,21 @@ function hideURLbar() {
 <link href="css/style.css" rel='stylesheet' type='text/css' />
 <link href="css/font-awesome.min.css" rel="stylesheet">
 <link href="http://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=devanagari,latin-ext" rel="stylesheet">
+<style>
+html.i18n-pending #service-detail-badge,
+html.i18n-pending #service-detail-lead,
+html.i18n-pending #service-overview-heading,
+html.i18n-pending #service-overview-body,
+html.i18n-pending #service-scope-heading,
+html.i18n-pending #service-scope-list,
+html.i18n-pending #service-routes-panel,
+html.i18n-pending #service-advantages-heading,
+html.i18n-pending #service-advantages-list,
+html.i18n-pending #service-related-title,
+html.i18n-pending #service-related-links {
+    visibility: hidden;
+}
+</style>
 </head>
 <body>
 <header>
@@ -178,8 +216,8 @@ function hideURLbar() {
                     <h3 data-i18n="footer_useful_links">Useful Links</h3>
                 </div>
                 <ul class="links">
-                    <li><a href="about.html" data-i18n="footer_who_we_are">About Our Company</a></li>
-                    <li><a href="services.html" data-i18n="nav_services">Logistics Services</a></li>
+                    <li><a href="about-detail.html?section=profile" data-i18n="footer_who_we_are">About Our Company</a></li>
+                    <li><a href="service-detail.html?service=sea" data-i18n="nav_services">Logistics Services</a></li>
                     <li><a href="#" data-i18n="footer_terms">Terms & Conditions</a></li>
                     <li><a href="#" data-i18n="footer_privacy">Privacy Policy</a></li>
                 </ul>
@@ -203,7 +241,7 @@ function hideURLbar() {
             <a href="#home" class="move-top"><span class="fa fa-angle-double-up" aria-hidden="true"></span></a>
         </div>
         <div class="copyright">
-            <p data-i18n="footer_copyright">Copyright © 2019. Company name All rights reserved by Joined Link Logistics Co., Ltd. 深圳市嘉领物流有限公司</p>
+            <p data-i18n="footer_copyright">Copyright © 2019. Company name All rights reserved by Joined Link Logistics Co., Ltd.</p>
         </div>
     </div>
 </div>

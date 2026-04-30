@@ -16,6 +16,29 @@
 <meta property="og:image" content="https://joinedlink.com/images/images_lib/about/company-profile.jpg" />
 <meta name="twitter:card" content="summary_large_image" />
 <script>
+(function () {
+    var lang = "en";
+    try {
+        var params = new URLSearchParams(window.location.search);
+        var urlLang = params.get("lang");
+        if (urlLang === "zh" || urlLang === "en") {
+            lang = urlLang;
+        } else {
+            var saved = localStorage.getItem("siteLanguage");
+            if (saved === "zh" || saved === "en") {
+                lang = saved;
+            } else {
+                var navLang = navigator.language || navigator.userLanguage || "en";
+                lang = navLang.toLowerCase().indexOf("zh") === 0 ? "zh" : "en";
+            }
+        }
+    } catch (e) {
+    }
+    document.documentElement.lang = lang;
+    document.documentElement.classList.add("i18n-pending");
+})();
+</script>
+<script>
 addEventListener("load", function () {
     setTimeout(hideURLbar, 0);
 }, false);
@@ -27,6 +50,15 @@ function hideURLbar() {
 <link href="css/style.css" rel='stylesheet' type='text/css' />
 <link href="css/font-awesome.min.css" rel="stylesheet">
 <link href="http://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=devanagari,latin-ext" rel="stylesheet">
+<style>
+html.i18n-pending #about-company-name,
+html.i18n-pending #about-detail-badge,
+html.i18n-pending #about-related-title,
+html.i18n-pending #about-related-links,
+html.i18n-pending #about-overview-body {
+    visibility: hidden;
+}
+</style>
 </head>
 <body>
 <header>
@@ -116,7 +148,7 @@ function hideURLbar() {
         <div class="row service-detail-body">
             <div class="col-lg-8">
                 <div class="service-detail-panel mb-4">
-                    <div class="about-company-name" id="about-company-name">深圳市嘉领物流有限公司</div>
+                    <div class="about-company-name" id="about-company-name">Joined Link Logistics Co., Ltd.</div>
                     <div id="about-overview-body"></div>
                     <img class="about-profile-image" id="about-profile-image" src="images/images_lib/about/company-profile.jpg" alt="Company Profile" />
                     <img class="about-structure-image" id="about-structure-image" src="images/images_lib/about/org-structure.png" alt="Organization Structure" />
@@ -163,8 +195,8 @@ function hideURLbar() {
                     <h3 data-i18n="footer_useful_links">Useful Links</h3>
                 </div>
                 <ul class="links">
-                    <li><a href="about.html" data-i18n="footer_who_we_are">About Our Company</a></li>
-                    <li><a href="services.html" data-i18n="nav_services">Logistics Services</a></li>
+                    <li><a href="about-detail.html?section=profile" data-i18n="footer_who_we_are">About Our Company</a></li>
+                    <li><a href="service-detail.html?service=sea" data-i18n="nav_services">Logistics Services</a></li>
                     <li><a href="#" data-i18n="footer_terms">Terms & Conditions</a></li>
                     <li><a href="#" data-i18n="footer_privacy">Privacy Policy</a></li>
                 </ul>

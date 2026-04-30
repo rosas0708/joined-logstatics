@@ -407,6 +407,11 @@
       if (!linkLang) return;
       link.classList.toggle("active-lang", linkLang === lang);
     });
+
+    document.documentElement.classList.remove("i18n-pending");
+    document.dispatchEvent(new CustomEvent("site-language-applied", {
+      detail: { lang }
+    }));
   }
 
   function setLanguage(lang, options = {}) {

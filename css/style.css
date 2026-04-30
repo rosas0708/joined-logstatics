@@ -1684,7 +1684,7 @@ p.card-text {
 
 .footer_w3layouts_section_1its h3, .footer_w3layouts_section_1its h2 {
     font-size: 22px;
-    color: #e5e7eb;
+    color: var(--muted);
     margin-bottom: 20px;
     letter-spacing: 1px;
     text-transform: none;
@@ -1812,9 +1812,14 @@ ul.links li {
     margin: 10px 0;
 }
 ul.links li a{
-    color: rgba(203, 213, 245, 0.75);
+    color: var(--muted);
     font-size: 15px;
     letter-spacing: .5px;
+}
+
+ul.links li a:hover {
+    color: var(--muted);
+    text-decoration: underline;
 }
 
 

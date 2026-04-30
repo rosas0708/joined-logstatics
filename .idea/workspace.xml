@@ -1,30 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a9d4ccd1-ecf3-42bb-b5d2-0afdbf23aeed" name="更改" comment="网站改版" />
+    <list default="true" id="a9d4ccd1-ecf3-42bb-b5d2-0afdbf23aeed" name="更改" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "rosas0708"
-  }
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
 }]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/rosas0708/joined-logstatics.git",
-    "accountId": "24d6cf86-731c-48e4-844c-a3213cbacb80"
-  }
-}]]></component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 7
-}</component>
   <component name="ProjectId" id="3CQyR5vfRN9cJA08EOCL3pTpqYe" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -34,10 +19,8 @@
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/workspace/oldwebsite"
+    "last_opened_file_path": "D:/workspace/vscode_workspace/website/joined-logstatics-main"
   }
 }]]></component>
   <component name="SharedIndexes">
@@ -55,19 +38,6 @@
       <option name="presentableId" value="Default" />
       <updated>1776332076536</updated>
     </task>
-    <task id="LOCAL-00001" summary="网站改版">
-      <option name="closed" value="true" />
-      <created>1776420095127</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1776420095127</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="网站改版" />
-    <option name="LAST_COMMIT_MESSAGE" value="网站改版" />
   </component>
 </project>

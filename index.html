@@ -22,6 +22,29 @@
 <meta name="twitter:title" content="Joinedlink Logistics | China Freight Forwarder & Global Logistics Services" />
 <meta name="twitter:description" content="China-based freight forwarding and global logistics solutions for ocean, air, customs, warehousing, trucking, and door to door shipping." />
 <meta name="twitter:image" content="https://joinedlink.com/images/images_lib/home/C.png" />
+<script>
+(function () {
+    var lang = "en";
+    try {
+        var params = new URLSearchParams(window.location.search);
+        var urlLang = params.get("lang");
+        if (urlLang === "zh" || urlLang === "en") {
+            lang = urlLang;
+        } else {
+            var saved = localStorage.getItem("siteLanguage");
+            if (saved === "zh" || saved === "en") {
+                lang = saved;
+            } else {
+                var navLang = navigator.language || navigator.userLanguage || "en";
+                lang = navLang.toLowerCase().indexOf("zh") === 0 ? "zh" : "en";
+            }
+        }
+    } catch (e) {
+    }
+    document.documentElement.lang = lang;
+    document.documentElement.classList.add("i18n-pending");
+})();
+</script>
 
     <script>
         addEventListener("load", function () {
@@ -43,6 +66,24 @@
 	<link href="http://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=devanagari,latin-ext" rel="stylesheet">
 
 	<!-- //google fonts -->
+	<style>
+	html.i18n-pending [data-i18n="choose_title"],
+	html.i18n-pending [data-i18n="route_map_title"],
+	html.i18n-pending [data-i18n="home_partners_title"],
+	html.i18n-pending [data-i18n="home_partners_desc"],
+	html.i18n-pending [data-i18n="choose_title_1"],
+	html.i18n-pending [data-i18n="choose_subtext"],
+	html.i18n-pending [data-i18n="section_about_title"],
+	html.i18n-pending [data-i18n="section_about_body"],
+	html.i18n-pending [data-i18n="route_legend_north_america"],
+	html.i18n-pending [data-i18n="route_legend_west_africa"],
+	html.i18n-pending [data-i18n="route_legend_europe"],
+	html.i18n-pending [data-i18n="route_legend_southeast_asia"],
+	html.i18n-pending [data-i18n="route_legend_middle_east"],
+	html.i18n-pending [data-i18n="route_legend_south_america"] {
+		visibility: hidden;
+	}
+	</style>
 	<script type="application/ld+json">
 	{
 	  "@context": "https://schema.org",
@@ -230,7 +271,7 @@
 
 <section class="services py-5" id="services">
 	<div class="container py-md-3">
-		<h2 class="heading text-center mb-sm-5 mb-4" data-i18n="choose_title">主营业务</h2>
+		<h2 class="heading text-center mb-sm-5 mb-4" data-i18n="choose_title">Our Core Services</h2>
 		<div class="choose choose-services text-center d-lg-flex justify-content-center">
 	<a class="choose-icon choose-link" href="service-detail.html?service=sea">
 		<span class="fa fa-ship" aria-hidden="true"></span>
@@ -311,18 +352,18 @@
 <div class="choose text-center d-lg-flex justify-content-center in-view">
 	<div class="choose-header w-100">
 		<!-- <p class="route-map-eyebrow" data-i18n="route_map_eyebrow">Global Route Visibility</p> -->
-		<h2 class="heading route-map-heading" data-i18n="route_map_title">全球航线动态示意图</h2>
+		<h2 class="heading route-map-heading" data-i18n="route_map_title">Joined Link Logistics Global Service Network</h2>
 	</div>
 	<div class="route-map-section py-5" id="route-map">
 		<div class="route-map-visual">
 			<div id="global-route-map" class="route-map-chart" aria-label="Global logistics route map"></div>
 			<div class="route-map-legend" aria-label="Route regions legend">
-				<span class="route-map-legend-item north-america"><i class="route-map-legend-swatch north-america"></i><span data-i18n="route_legend_north_america">北美</span></span>
-				<span class="route-map-legend-item western-africa"><i class="route-map-legend-swatch western-africa"></i><span data-i18n="route_legend_west_africa">西非</span></span>
-				<span class="route-map-legend-item europe"><i class="route-map-legend-swatch europe"></i><span data-i18n="route_legend_europe">欧洲</span></span>
-				<span class="route-map-legend-item southeast-asia"><i class="route-map-legend-swatch southeast-asia"></i><span data-i18n="route_legend_southeast_asia">东南亚</span></span>
-				<span class="route-map-legend-item middle-east"><i class="route-map-legend-swatch middle-east"></i><span data-i18n="route_legend_middle_east">中东</span></span>
-				<span class="route-map-legend-item south-america"><i class="route-map-legend-swatch south-america"></i><span data-i18n="route_legend_south_america">南美</span></span>
+				<span class="route-map-legend-item north-america"><i class="route-map-legend-swatch north-america"></i><span data-i18n="route_legend_north_america">North America</span></span>
+				<span class="route-map-legend-item western-africa"><i class="route-map-legend-swatch western-africa"></i><span data-i18n="route_legend_west_africa">West Africa</span></span>
+				<span class="route-map-legend-item europe"><i class="route-map-legend-swatch europe"></i><span data-i18n="route_legend_europe">Europe</span></span>
+				<span class="route-map-legend-item southeast-asia"><i class="route-map-legend-swatch southeast-asia"></i><span data-i18n="route_legend_southeast_asia">Southeast Asia</span></span>
+				<span class="route-map-legend-item middle-east"><i class="route-map-legend-swatch middle-east"></i><span data-i18n="route_legend_middle_east">Middle East</span></span>
+				<span class="route-map-legend-item south-america"><i class="route-map-legend-swatch south-america"></i><span data-i18n="route_legend_south_america">South America</span></span>
 			</div>
 			<p class="route-map-attribution"></p>
 		</div>
@@ -334,8 +375,8 @@
 		<div class="home-partners-panel">
 			<div class="choose-icon choose-icon-subtitle home-partners-inner">
 				<div class="choose-header w-100 text-center">
-					<h2 class="heading" data-i18n="home_partners_title">合作伙伴</h2>
-					<p class="home-partners-text" data-i18n="home_partners_desc">嘉领物流与多家船公司MSK、COSCO、EMC、HPL， PIL，OOCL, ONE、CMA、WHL、MSC、YML,TSL, ESL等有合作关系。以及与CX、CV、RU、QR 、ET、TK、EK、CZ、CA、PO等航线长期合作，强强联合，更具有NVOCC一级货运代理资格！</p>
+					<h2 class="heading" data-i18n="home_partners_title">Partners</h2>
+					<p class="home-partners-text" data-i18n="home_partners_desc">Joined Link Logistics maintains cooperative relationships with major shipping lines including MSK, COSCO, EMC, HPL, PIL, OOCL, ONE, CMA, WHL, MSC, YML, TSL, ESL and so on. We also work closely with long-term airline partners such as CX, CV, RU, QR, ET, TK, EK, CZ, CA, and PO. Through strong alliances and our NVOCC Class-A freight forwarding qualification, we provide customers with more stable and competitive logistics support.</p>
 				</div>
 				<div class="partner-logo-grid partner-logo-grid-static">
 					<div class="partner-logo-card"><img src="images/images_lib/partners/1.png" alt="Maersk" loading="lazy" /></div>
@@ -369,7 +410,7 @@
 
 <div class="choose text-center d-lg-flex justify-content-center">
 	<div class="choose-header w-100">
-		<h2 class="heading" data-i18n="choose_title_1">致力于全球各类货物安全高效运输</h2>
+		<h2 class="heading" data-i18n="choose_title_1">Dedicated to safe, efficient transport of all cargo worldwide</h2>
 	</div>
 	<div class="choose-icon choose-icon-subtitle">
 		<div class="choose-subtitle w-100">
@@ -540,12 +581,6 @@
 					</div>
 					<div class="footer-text">
 						<p data-i18n="footer_who_we_are_body">Joined Link Logistics Co., Ltd. is a leading logistics company located in Shenzhen, China. We ship goods from China to worldwide destinations by air and sea. We have an experienced and powerful team to support you.</p>
-					<ul class="social_section_1info">
-						<li><a href="#" class="w3_facebook"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="#" class="w3_twitter"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="#" class="w3_instagram"><i class="fa fa-instagram"></i></a></li>
-						<li><a href="#" class="w3_google"><i class="fa fa-google-plus"></i></a></li>
-					</ul>
 			</div>
 			</div>
 			<div class="col-md-3 col-sm-5 footer-grid_section_1its_w3 mt-md-0 mt-4">
@@ -554,7 +589,7 @@
 				</div>
 				<ul class="links">
 					<li><a href="about-detail.html?section=profile" data-i18n="footer_who_we_are">About Our Company</a></li>
-					<li><a href="services.html" data-i18n="nav_services">Logistics Services</a></li>
+					<li><a href="service-detail.html?service=sea" data-i18n="nav_services">Logistics Services</a></li>
 					<li><a href="#" data-i18n="footer_terms">Terms & Conditions</a></li>
 					<li><a href="#" data-i18n="footer_privacy">Privacy Policy</a></li>
 				</ul>
@@ -580,7 +615,7 @@
 		</div>
 		<!-- //move top -->
 		<div class="copyright">
-			<p data-i18n="footer_copyright">Copyright &copy; 2019.Company name All rights reserved by Joined Link Logistics Co., Ltd. 深圳市嘉领物流有限公��?/p>
+			<p data-i18n="footer_copyright">Copyright &copy; 2019.Company name All rights reserved by Joined Link Logistics Co., Ltd.</p>
 		</div>
 	</div>
 </div>

@@ -270,4 +270,8 @@
       });
     });
   });
+
+  document.addEventListener("site-language-applied", function () {
+    render();
+  });
 })();
